@@ -1,0 +1,177 @@
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css2.css">
+<script src="app.js"></script>
+<header>
+    <nav>
+        <div class="marquee">
+        <marquee direction="left"> <p> livraison gratuite à partir de 100$ </p></marquee>
+    </div>
+        <div class="princiaple">
+            <div class="logo">
+                <a href="#">
+                    
+                      <H1>MAISHOPING</H1> 
+                   </a>
+                  
+             </div>
+        </div>
+        <nav>
+        <ul> 
+            <li>
+                <a href="index.html">Accueil </a>
+            </li>
+            <li>
+              <a href="conatct.html"> Contact </a>
+          </li>
+          <li>
+              <a href="compte.html"> Compte </a>
+          </li>
+          <li class="active">
+              <a href="panier.html"> Panier </a>
+          </li>
+        </nav>
+        </nav>
+          <nav>       
+   <div class="barre "> 
+       
+       
+</nav>
+</header>
+</ul>
+</nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content=
+    "width=device-width, initial-scale=1.0" />
+ 
+  <!-- font-awesome library to make the
+      webpage more appealing -->
+  <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+ 
+  <!-- Internal CSS styling -->
+  <style>
+    .content {
+      text-align: center;
+      padding: 30px;
+      margin: 0px auto;
+    }
+ 
+    .details {
+      margin-left: auto;
+      margin-right: auto;
+    }
+ 
+    img {
+      border-radius: 5px;
+      box-shadow: black;
+    }
+ 
+    table,
+    td {
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid black;
+    }
+  </style>
+<head>
+    <script language="javascript">
+    function valider() {
+    if (!document.getElementById("casea").checked && document.getElementById("caseb").checked && !document.getElementById("casec").checked) {
+    alert('téléchargement ');
+    } else {
+    alert('Vous etes sur?');
+    }
+    }
+    </script>
+    </head>
+    <div class="overlay">
+        <!-- LOGN IN FORM by Omar Dsoky -->
+        <form>
+           <!--   con = Container  for items in the form-->
+           <div class="con">
+           <!--     Start  header Content  -->
+           <header class="head-form">
+              <h2>Log In</h2>
+              <!--     A welcome message or an explanation of the login form -->
+              <p>saisir nom d'utilisateur et MDP</p>
+           </header>
+           <!--     End  header Content  -->
+           <br>
+           <div class="field-set">
+             
+              <!--   user name -->
+                 <span class="input-item">
+                   <i class="fa fa-user-circle"></i>
+                 </span>
+                <!--   user name Input-->
+                 <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+             
+              <br>
+             
+                   <!--   Password -->
+             
+              <span class="input-item">
+                <i class="fa fa-key"></i>
+               </span>
+              <!--   Password Input-->
+              <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+             
+        <!--      Show/hide password  -->
+             <span>
+                <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+             </span>
+             
+             
+              <br>
+        <!--        buttons -->
+        <!--      button LogIn -->
+              <button class="log-in"> connexion </button>
+           </div>
+          
+        <!--   other buttons -->
+           <div class="other">
+        <!--      Forgot Password button-->
+              <button class="btn submits frgt-pass">mot de passe oublié</button>
+        <!--     Sign Up button -->
+              <button class="btn submits sign-up">inscription
+        <!--         Sign Up font icon -->
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+              </button>
+        <!--      End Other the Division -->
+           </div>
+             
+        <!--   End Conrainer  -->
+          </div>
+          
+          <!-- End Form -->
+        </form>
+        </div>
+  
+    <div class="container">
+        <div class="message signup">
+         
+           
+        </div>
+        <div class="form form--signup">
+          <div class="form--heading"><h1>inscrivez-vous</h1></div>
+          <form autocomplete="off">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button class="button">Sign Up</button>
+          </form>
+        </div>
+        <body>
+            <div><h1>acceptez vous les conditions ? </h1></div>
+            <input id="casea" type="checkbox">non<br>
+            <input id="caseb" type="checkbox">oui<br>
+            <input id="casec" type="checkbox">je ne sais pas<br>
+            <div style="text-align:center"><input type="button" value="Valider" onClick="valider()"></div>
+            </body>
+        
+    </html>

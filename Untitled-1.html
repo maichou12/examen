@@ -1,0 +1,69 @@
+!
+<div id="image"> <img src="images/champoing.jfif" alt="" class=" image1 show "></div> 
+                         
+                        <div id="image"> <img src="images/cereales.jfif" alt=""class="image2 "> </div>
+                          
+                            <div id="image"> <img src="images/iphne x.jfif" alt=""class="image3"></div>
+                          <div class="suivant">
+                            <i class="fa-solid fa-angle-right"></i> 
+                          </div>
+                          <div class="precedent">
+                            <i class="fa-solid fa-angle-left"></i>
+                          </div>
+                      </div>
+
+
+                      css 
+                      
+#slider{
+  background-color: #FBFCFC ;
+  
+}
+#slider {
+overflow: hidden;
+
+height: 50vh;
+position: relative;
+
+}
+
+
+
+
+#slider #image{
+  width: 70%;
+  height: 65vh;
+ position: absolute;
+ opacity: 0;
+ transition: 3s;
+
+
+}
+.show{
+  opacity: 1;
+}
+
+
+js 
+let img1= document.querySelector('.image1') ;
+let img2= document.querySelector('.image2') ;
+let img3= document.querySelector('.image3') ;
+
+setInterval (function(){
+
+    if(img1.classList.contains('show')) {
+        
+        img2.classList.add('show')
+        img3.classList.remove('show')
+
+    } else if(img2.classList.contains('show')) {
+        
+        img2.classList.add('show')
+        img3.classList.remove('show')
+    }else if(img3.classList.contains('show')) {
+        
+        img1.classList.add('show')
+        img3.classList.remove('show')
+    }
+
+},4000);
